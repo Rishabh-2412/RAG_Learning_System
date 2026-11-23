@@ -1,11 +1,9 @@
 import os
 from langchain_community.document_loaders import TextLoader, DirectoryLoader
 from langchain_text_splitters import CharacterTextSplitter
-from langchain_ollama import OllamaLLM, OllamaEmbeddings
+from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
-from dotenv import load_dotenv
 
-load_dotenv()
 
 def load_documents(docs_path="docs"):
     """Load all text files from the docs directory"""

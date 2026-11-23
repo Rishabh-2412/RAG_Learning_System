@@ -1,9 +1,6 @@
 from langchain_chroma import Chroma
 from langchain_ollama import ChatOllama, OllamaEmbeddings
-from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, SystemMessage
-
-load_dotenv()
 
 persistent_directory = "db/chroma_db"
 

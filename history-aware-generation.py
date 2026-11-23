@@ -3,9 +3,6 @@ from langchain_chroma import Chroma
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from langchain_ollama import ChatOllama, OllamaEmbeddings
 
-# Load environment variables
-# load_dotenv()
-
 # Connect to your document database
 persistent_directory = "db/chroma_db"
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
